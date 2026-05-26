@@ -1,0 +1,4 @@
+interface:
+  display_name: "TPSP CLI HTTP"
+  short_description: "CLI, HTTP, table, and JSON behavior for tpsp"
+  default_prompt: "Use $tpsp-cli-http when changing tpsp CLI parsing, HTTP fetch, filtering, table output, or JSON output."

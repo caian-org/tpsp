@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "_notes": {
+    "purpose": "Claude Code project settings for tpsp. Shared guidance lives in AGENTS.md; skills live in .codex/skills and specialist subagents live in .claude/agents.",
+    "todo": [
+      "Consider a PreToolUse guard before manual edits to generated bin/ output if this repository grows more automation."
+    ]
+  },
+  "hooks": {}
+}

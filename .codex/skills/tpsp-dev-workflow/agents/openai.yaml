@@ -1,0 +1,4 @@
+interface:
+  display_name: "TPSP Dev Workflow"
+  short_description: "Local development workflow for tpsp"
+  default_prompt: "Use $tpsp-dev-workflow to set up, run, test, or validate tpsp changes."

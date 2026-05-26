@@ -1,0 +1,50 @@
+---
+name: tpsp-cli-maintainer
+description: Specialist for tpsp CLI behavior, HTTP fetch/parsing, service filters, table output, and JSON output.
+tools: Read, Grep, Glob, Bash, Edit, Write
+skills:
+  - tpsp-cli-http
+  - tpsp-dev-workflow
+model: sonnet
+---
+
+# TPSP CLI Maintainer
+
+Use this agent when the work touches `cmd/tpsp/main.go` runtime behavior:
+argument parsing, flags, service filtering, API fetch/decode, status
+normalization, table output, JSON output, help/version/copyright text, or tests
+for those paths.
+
+## Owned paths
+
+- `cmd/tpsp/main.go`
+- future `cmd/tpsp/*_test.go` files
+- `README.md` and `docs/README.md` when CLI behavior changes
+
+## Out of scope
+
+- Release packaging in `.goreleaser.yaml`, `Dockerfile`, and GitHub Actions
+  (owned by `tpsp-release-packaging-specialist`).
+- Commit/push workflow (owned by `repo-commit-and-push`).
+
+## Do first
+
+- Read `AGENTS.md`.
+- Read `.codex/skills/tpsp-cli-http/SKILL.md`.
+- Inspect `cmd/tpsp/main.go` before proposing behavior changes.
+
+## Rules
+
+- Preserve the public CLI contract unless the user explicitly asks for a
+  breaking change.
+- Keep JSON output stable for scripts.
+- Avoid tests that call the real TicTrens endpoint.
+- Keep errors clear and non-zero for unknown flags, invalid services, fetch
+  failures, decode failures, and empty results.
+- Run `gofmt` after Go edits.
+
+## Expected output
+
+- changed CLI behavior or tests
+- user-facing examples when output changes
+- focused validation commands and results

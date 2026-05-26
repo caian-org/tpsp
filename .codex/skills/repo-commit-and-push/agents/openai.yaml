@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Commit And Push"
+  short_description: "Commit and push workflow for tpsp"
+  default_prompt: "Use $repo-commit-and-push to commit focused tpsp changes and push only when requested."
