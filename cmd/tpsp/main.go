@@ -11,7 +11,7 @@ import (
 
 const (
 	programName        = "tpsp"
-	programVersion     = "2.0.0"
+	programVersion     = "2.0.2"
 	programDescription = "CLI for Sao Paulo public transportation line status"
 	programURL         = "https://github.com/caian-org/tpsp"
 	apiURL             = "https://www.tictrens.com.br/helper/line-statuses"
