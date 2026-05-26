@@ -10,9 +10,9 @@
       "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ]
+      "test": ["just test"],
+      "release-check": ["goreleaser check"],
+      "release-snapshot": ["goreleaser release --snapshot --clean"]
     }
   }
 }
