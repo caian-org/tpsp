@@ -40,7 +40,7 @@ docker pull ghcr.io/caian-org/tpsp:latest
 Também é possível usar uma versão específica:
 
 ```sh
-docker pull ghcr.io/caian-org/tpsp:v2.0.2
+docker pull ghcr.io/caian-org/tpsp:v2.0.3
 ```
 
 Exemplos:
