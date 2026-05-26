@@ -133,7 +133,9 @@ func fetchLineStatuses() (*APIResponse, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch data: %w", err)
 	}
-	defer resp.Body.Close()
+	defer func() {
+		_ = resp.Body.Close()
+	}()
 
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("API returned status %d", resp.StatusCode)

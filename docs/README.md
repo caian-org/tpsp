@@ -15,7 +15,7 @@ Metro ou qualquer outro órgão governamental.**
 
 ## Requerimentos
 
-- Go 1.21 ou superior (apenas para compilação)
+- Go 1.26 ou superior (apenas para compilação)
 - just (apenas para compilação)
 - Docker (opcional, para uso via imagem de container)
 
