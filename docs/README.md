@@ -16,6 +16,7 @@ Metro ou qualquer outro órgão governamental.**
 ## Requerimentos
 
 - Go 1.21 ou superior (apenas para compilação)
+- Docker (opcional, para uso via imagem de container)
 
 
 ## Compilação
@@ -25,6 +26,34 @@ make
 ```
 
 O binário será gerado em `bin/tpsp`.
+
+
+## Docker
+
+A imagem oficial do projeto é publicada no GitHub Container Registry:
+
+```sh
+docker pull ghcr.io/caian-org/tpsp:latest
+```
+
+Também é possível usar uma versão específica:
+
+```sh
+docker pull ghcr.io/caian-org/tpsp:v2.0.2
+```
+
+Exemplos:
+
+```sh
+# Exibe o estado de todas as linhas
+docker run --rm ghcr.io/caian-org/tpsp:latest
+
+# Exibe apenas as linhas do Metro
+docker run --rm ghcr.io/caian-org/tpsp:latest metro
+
+# Exibe as linhas da CPTM em formato JSON
+docker run --rm ghcr.io/caian-org/tpsp:latest cptm --json
+```
 
 
 ## Uso
