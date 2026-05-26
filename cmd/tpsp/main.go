@@ -11,10 +11,16 @@ import (
 
 const (
 	programName        = "tpsp"
-	programVersion     = "2.0.4"
 	programDescription = "CLI for Sao Paulo public transportation line status"
 	programURL         = "https://github.com/caian-org/tpsp"
 	apiURL             = "https://www.tictrens.com.br/helper/line-statuses"
+)
+
+// Injected at release time via -ldflags by goreleaser.
+var (
+	Version   = "0.0.0-dev"
+	Commit    = "none"
+	BuildDate = "unknown"
 )
 
 const copyrightInfo = `
@@ -291,7 +297,11 @@ func main() {
 
 	// Handle --version
 	if showVersion {
-		fmt.Printf("%s (%s)\n", programName, programVersion)
+		if Commit != "none" {
+			fmt.Printf("%s %s (%s, %s)\n", programName, Version, Commit, BuildDate)
+		} else {
+			fmt.Printf("%s (%s)\n", programName, Version)
+		}
 		os.Exit(0)
 	}
 
