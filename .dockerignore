@@ -4,6 +4,6 @@ bin
 docs
 *.md
 LICENSE
-Makefile
+.justfile
 .goreleaser.yaml
 .gitignore

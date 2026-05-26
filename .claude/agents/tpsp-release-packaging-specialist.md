@@ -17,7 +17,7 @@ Use this agent when the work touches release or packaging configuration.
 - `Dockerfile`
 - `.github/workflows/release.yml`
 - `.github/dependabot.yml`
-- `Makefile` when build outputs or release build commands change
+- `.justfile` when build outputs or release build commands change
 
 ## Out of scope
 

@@ -8,7 +8,7 @@ Owned paths:
 - Dockerfile
 - .github/workflows/release.yml
 - .github/dependabot.yml
-- Makefile when build outputs or release build commands change
+- .justfile when build outputs or release build commands change
 
 Out of scope:
 - Runtime CLI behavior in cmd/tpsp/main.go (owned by tpsp-cli-maintainer).

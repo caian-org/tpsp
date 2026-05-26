@@ -32,7 +32,8 @@ file in the same change set.
 
 ## Quick Reference
 
-- `make` - build `bin/tpsp`.
+- `just build` - build `bin/tpsp`.
+- `just clean` - remove generated `bin/tpsp`.
 - `go test ./...` - run package tests and vet.
 - `go vet ./...` - run vet explicitly.
 - `go build -o /tmp/tpsp-check ./cmd/tpsp` - disposable build check.

@@ -11,13 +11,14 @@ do not edit generated binaries by hand. User-facing documentation is in
 
 ## Build, Test, and Development Commands
 
-- `make` builds `bin/tpsp`.
+- `just build` builds `bin/tpsp`.
 - `go build -o bin/tpsp ./cmd/tpsp` builds the CLI directly.
 - `go run ./cmd/tpsp --help` checks the help surface.
 - `go run ./cmd/tpsp --version` checks the version surface.
 - `go run ./cmd/tpsp --copyright` checks the CC0 copyright text.
 - `go test ./...` runs tests and `go vet` checks for the package.
 - `go vet ./...` runs vet explicitly.
+- `just clean` removes the generated `bin/tpsp` binary.
 - `gofmt -w cmd/tpsp/main.go` formats the Go source after edits.
 
 Avoid making tests depend on the live `https://www.tictrens.com.br` endpoint.

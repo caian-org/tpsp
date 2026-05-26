@@ -12,7 +12,7 @@ implementation hygiene across `tpsp`.
 
 - `cmd/tpsp/main.go` - single Go CLI entrypoint and most runtime behavior.
 - `README.md` and `docs/README.md` - user-facing behavior and examples.
-- `Makefile` - local build command that writes `bin/tpsp`.
+- `.justfile` - local build commands that write or clean `bin/tpsp`.
 - `.goreleaser.yaml` - release artifacts for linux, darwin, and windows.
 - `Dockerfile` - static binary runtime image using `scratch`.
 - `.github/workflows/release.yml` - tag-driven GoReleaser workflow.
@@ -24,7 +24,8 @@ edit `bin/tpsp` by hand.
 ## Commands
 
 ```sh
-make
+just build
+just clean
 go build -o bin/tpsp ./cmd/tpsp
 go build -o /tmp/tpsp-check ./cmd/tpsp
 go test ./...
