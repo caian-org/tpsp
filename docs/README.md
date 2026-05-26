@@ -68,5 +68,5 @@ direitos autorais e direitos relacionados ou adjacentes a este trabalho__. No
 espírito da _liberdade de informação_, encorajo você a forkar, modificar,
 alterar, compartilhar ou fazer o que quiser com este projeto! [`^ C ^ V`][kopimi]
 
-[me]: https://github.com/upsetbit
+[me]: https://github.com/caian-org
 [kopimi]: https://kopimi.com
