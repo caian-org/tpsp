@@ -295,7 +295,7 @@ func main() {
 
 	// Handle --copyright
 	if showCopyright {
-		fmt.Println(copyrightInfo)
+		fmt.Print(copyrightInfo)
 		os.Exit(0)
 	}
 
